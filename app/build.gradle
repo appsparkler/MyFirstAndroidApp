@@ -33,6 +33,16 @@ android {
     buildFeatures {
         viewBinding true
     }
+    flavorDimensions 'app_market'
+    productFlavors {
+        google {
+            dimension 'app_market'
+            applicationIdSuffix '.amazon'
+        }
+        amazon {
+            dimension 'app_market'
+        }
+    }
 }
 
 dependencies {
